@@ -1,7 +1,5 @@
 package Example;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -14,16 +12,17 @@ public class NewTest {
 	private WebDriver driver;		
 	@Test				
 	public void testEasy() {	
-		driver.get("http://demo.guru99.com/test/guru99home/");  
+		String server = System.getProperty("sechqserver");
+		driver.get(server);  
 		String title = driver.getTitle();				 
-		Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
-	}	
+		Assert.assertTrue(title.contains("Docker Demo")); 		
+	}		
 	@BeforeTest
 	public void beforeTest() {	
-		System.setProperty("webdriver.gecko.driver","/home/netiq/Programs/firefox2/geckodriver");
+		System.setProperty("webdriver.gecko.driver","/home/fwm/browsers/firefox/geckodriver");
 		 DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 	     capabilities.setCapability("marionette", false);
-	     String firefox_binary_path = "//home//netiq//Programs//firefox2//firefox";
+	     String firefox_binary_path = "/home/fwm/browsers/firefox/firefox";
 	     capabilities.setCapability("firefox_binary", firefox_binary_path);
 	    driver = new FirefoxDriver(capabilities);  
 	    
