@@ -23,7 +23,8 @@ public class NewTest {
 	@BeforeTest
 	public void beforeTest() {	
 //		System.setProperty("webdriver.gecko.driver","/home/vikram/programs/firefox");
-		String firefoxPath = System.getProperty("webdriver");
+//		String firefoxPath = System.getProperty("webdriver");
+		String firefoxPath = System.getenv("webdriver");
 		System.out.println("firefoxPath::"+firefoxPath);
 		System.setProperty("webdriver.gecko.driver", firefoxPath+"/geckodriver");
 		 DesiredCapabilities capabilities = DesiredCapabilities.firefox();
