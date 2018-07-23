@@ -12,11 +12,16 @@ public class NewTest {
 	private WebDriver driver;		
 	@Test				
 	public void testEasy() {	
-		String server = System.getProperty("sechqserver");
+		System.getProperty("webdriver.gecko.driver","/home/fwm/browsers/firefox/geckodriver");
+		driver.get("http://demo.guru99.com/test/guru99home/");  
+		String title = driver.getTitle();				 
+		Assert.assertTrue(title.contains("Demo Guru99 Page")); 
+		
+		/*String server = System.getProperty("sechqserver");
 		driver.get(server);  
 		String title = driver.getTitle();				 
-		Assert.assertTrue(title.contains("Docker Demo")); 		
-	}		
+		Assert.assertTrue(title.contains("Docker Demo")); 	*/
+	}	
 	@BeforeTest
 	public void beforeTest() {	
 		System.setProperty("webdriver.gecko.driver","/home/fwm/browsers/firefox/geckodriver");
