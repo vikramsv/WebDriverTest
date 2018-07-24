@@ -29,6 +29,10 @@ public class NewTest {
 		System.out.println("firefoxPath::"+firefoxPath);
 		System.out.println("webServer::"+webServer);
 		
+		String webServer2 = System.getProperty("webdriver");
+		
+		System.out.println("using system webServer::"+webServer2);
+		
 		System.setProperty("webdriver.gecko.driver", firefoxPath+"/geckodriver");
 		 DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 	     capabilities.setCapability("marionette", false);
