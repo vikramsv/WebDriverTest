@@ -29,7 +29,7 @@ public class NewTest {
 		System.out.println("firefoxPath::"+firefoxPath);
 		System.out.println("webServer::"+webServer);
 		
-		String webServer2 = System.getProperty("webdriver");
+		String webServer2 = System.getProperty("webserver");
 		
 		System.out.println("using system webServer::"+webServer2);
 		
