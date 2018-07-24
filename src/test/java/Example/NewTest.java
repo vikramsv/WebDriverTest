@@ -25,7 +25,10 @@ public class NewTest {
 //		System.setProperty("webdriver.gecko.driver","/home/vikram/programs/firefox");
 //		String firefoxPath = System.getProperty("webdriver");
 		String firefoxPath = System.getenv("webdriver");
+		String webServer = System.getenv("webserver");
 		System.out.println("firefoxPath::"+firefoxPath);
+		System.out.println("webServer::"+webServer);
+		
 		System.setProperty("webdriver.gecko.driver", firefoxPath+"/geckodriver");
 		 DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 	     capabilities.setCapability("marionette", false);
