@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="21829" started-at="2018-07-27T06:53:43Z" finished-at="2018-07-27T06:54:05Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="21829" started-at="2018-07-27T06:53:43Z" finished-at="2018-07-27T06:54:05Z">
+      <class name="Example.LoginWithInvalidCredentials">
+        <test-method status="PASS" signature="to_test_login_with_invalid_credentials()[pri:0, instance:Example.LoginWithInvalidCredentials@457e2f02]" name="to_test_login_with_invalid_credentials" duration-ms="4672" started-at="2018-07-27T12:24:00Z" finished-at="2018-07-27T12:24:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- to_test_login_with_invalid_credentials -->
+      </class> <!-- Example.LoginWithInvalidCredentials -->
+      <class name="Example.OpenLoginPage">
+        <test-method status="PASS" signature="To_test_login_page_opening()[pri:0, instance:Example.OpenLoginPage@1b604f19]" name="To_test_login_page_opening" duration-ms="2331" started-at="2018-07-27T12:23:46Z" finished-at="2018-07-27T12:23:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- To_test_login_page_opening -->
+      </class> <!-- Example.OpenLoginPage -->
+      <class name="Example.OpenWebsite">
+        <test-method status="PASS" signature="to_test_url_is_opening_or_not()[pri:0, instance:Example.OpenWebsite@4cc0edeb]" name="to_test_url_is_opening_or_not" duration-ms="143" started-at="2018-07-27T12:23:45Z" finished-at="2018-07-27T12:23:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- to_test_url_is_opening_or_not -->
+      </class> <!-- Example.OpenWebsite -->
+      <class name="Example.LoginWithValidCredentials">
+        <test-method status="PASS" signature="to_test_login_with_valid_credentials()[pri:0, instance:Example.LoginWithValidCredentials@7823a2f9]" name="to_test_login_with_valid_credentials" duration-ms="4706" started-at="2018-07-27T12:23:55Z" finished-at="2018-07-27T12:24:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- to_test_login_with_valid_credentials -->
+      </class> <!-- Example.LoginWithValidCredentials -->
+      <class name="Example.TestBase">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Example.TestBase@62ee68d8]" name="launchBrowser" duration-ms="2631" started-at="2018-07-27T12:23:43Z" finished-at="2018-07-27T12:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+      </class> <!-- Example.TestBase -->
+      <class name="Example.TestConnectionCheck">
+        <test-method status="PASS" signature="To_test_connection()[pri:0, instance:Example.TestConnectionCheck@1593948d]" name="To_test_connection" duration-ms="7318" started-at="2018-07-27T12:23:48Z" finished-at="2018-07-27T12:23:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- To_test_connection -->
+      </class> <!-- Example.TestConnectionCheck -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

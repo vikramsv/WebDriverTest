@@ -3,7 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Example.NewTest"/>
+      <!--  <class name="Example.NewTest"/>-->
+       <class name="Example.TestBase"/>
+    <class name="Example.OpenWebsite"/>
+         <class name="Example.OpenLoginPage"/> 
+       <class name="Example.TestConnectionCheck"/>
+       <class name="Example.LoginWithValidCredentials"/>
+       <class name="Example.LoginWithInvalidCredentials"/>
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

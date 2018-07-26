@@ -9,14 +9,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class NewTest {
-	private WebDriver driver;	
-	private String webserver;
-	
+	private WebDriver driver;		
 	@Test				
 	public void testEasy() {	
-		driver.get(webserver);  
+		driver.get("http://demo.guru99.com/test/guru99home/");  
 		String title = driver.getTitle();				 
-		Assert.assertTrue(title.contains("Docker-Demo")); 	
+		Assert.assertTrue(title.contains("Demo Guru99 Page")); 	
 		/*String server = System.getProperty("sechqserver");
 		driver.get(server);  
 		String title = driver.getTitle();				 
@@ -27,13 +25,13 @@ public class NewTest {
 //		System.setProperty("webdriver.gecko.driver","/home/vikram/programs/firefox");
 //		String firefoxPath = System.getProperty("webdriver");
 		String firefoxPath = System.getenv("webdriver");
-	/*	String webServer = System.getenv("webserver");
+		String webServer = System.getenv("webserver");
 		System.out.println("firefoxPath::"+firefoxPath);
-		System.out.println("webServer::"+webServer);*/
+		System.out.println("webServer::"+webServer);
 		
-		webserver = System.getProperty("webserver");
+		String webServer2 = System.getProperty("webserver");
 		
-		System.out.println("using system webServer::"+webserver);
+		System.out.println("using system webServer::"+webServer2);
 		
 		System.setProperty("webdriver.gecko.driver", firefoxPath+"/geckodriver");
 		 DesiredCapabilities capabilities = DesiredCapabilities.firefox();
