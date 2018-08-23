@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class OpenLoginPage {
   @Test
   public void To_test_login_page_opening() throws InterruptedException {
-	  TestBase.driver.get("https://10.20.151.59:8443/docker-ansible-demo/");
+//	  TestBase.driver.get("https://10.20.220.137:8443/docker-ansible-demo/");
 	  TestBase.driver.manage().window().maximize();
 	  TestBase.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  Thread.sleep(2000);
