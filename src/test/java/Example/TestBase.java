@@ -25,12 +25,13 @@ public class TestBase {
 	public static String ToolTipText = "tooltipstring";
   @Test
   public void launchBrowser() {
-	  String chromewebdriver=System.getenv("webdriver_chrome");
+	  String chromewebdriver = System.getenv("webdriver_chrome");
 	  System.setProperty("webdriver.chrome.driver", chromewebdriver);
 		driver = new ChromeDriver();
 	    /*System.setProperty("webdriver.gecko.driver", "/home/fwm/eclipse-workspace/ESASizing-Test/resources/geckodriver");
 		driver = new FirefoxDriver();*/
-		driver.get("https://10.20.151.59:8443/docker-ansible-demo/");
+		 String webserver = System.getenv("webserver");
+		driver.get(webserver);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
