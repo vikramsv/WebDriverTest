@@ -22,6 +22,6 @@ public class TestConnectionCheck {
 	  Assert.assertTrue(TestBase.driver.findElement(By.id("success")).getText().equals("Test Success .............."));
 	  System.out.println("Test Success ..............");
 	  TestBase.driver.navigate().refresh();
-	  TestBase.driver.close();
+//	  TestBase.driver.close();
   }
 }
