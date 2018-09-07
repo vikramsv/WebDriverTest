@@ -23,6 +23,7 @@ public class TestBase {
 	public static String sheetname = "SheetName";
 	public static int RowCount;
 	public static String ToolTipText = "tooltipstring";
+	public static String webserver = "";
   @Test
   public void launchBrowser() {
 	  String chromewebdriver = System.getenv("webdriver_chrome");
@@ -30,7 +31,7 @@ public class TestBase {
 		driver = new ChromeDriver();
 	    /*System.setProperty("webdriver.gecko.driver", "/home/fwm/eclipse-workspace/ESASizing-Test/resources/geckodriver");
 		driver = new FirefoxDriver();*/
-		 String webserver = System.getenv("webserver");
+		webserver = System.getenv("webserver");
 		driver.get(webserver);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
